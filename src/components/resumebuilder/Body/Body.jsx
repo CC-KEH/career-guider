@@ -7,7 +7,11 @@ import Resume from "../Resume/Resume";
 import styles from "./Body.module.css";
 
 function Body() {
-  const colors = ["#239ce2", "#48bb78", "#0bc5ea", "#a0aec0", "#ed8936"];
+
+  //* Colors in which the user can have the resume text made in 
+  const colors = ["#239ce2", "#48bb78", "#0bc5ea", "#a0aec0", "#ed8936","#ff0000be"];
+
+  //* Sections of Resume
   const sections = {
     basicInfo: "Basic Info",
     workExp: "Work Experience",
@@ -19,7 +23,11 @@ function Body() {
   };
   const resumeRef = useRef();
 
+  //* Takes care of active and inactive color, if button clicked color changes to blue, initially it is grey
   const [activeColor, setActiveColor] = useState(colors[0]);
+  
+  
+  //* Stores the information of the user's resume
   const [resumeInformation, setResumeInformation] = useState({
     [sections.basicInfo]: {
       id: sections.basicInfo,

@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@craco/craco": "^7.0.0",
+    "@craco/craco": "^5.9.0",
     "appwrite": "^10.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

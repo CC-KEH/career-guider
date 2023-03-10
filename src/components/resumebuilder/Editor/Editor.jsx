@@ -40,7 +40,7 @@ function Editor(props) {
       <div className={styles.row}>
         <InputControl
           label="Title"
-          placeholder="Enter title eg. Frontend developer"
+          placeholder= "Enter title eg. Frontend developer"
           value={values.title}
           onChange={(event) =>
             setValues((prev) => ({ ...prev, title: event.target.value }))
@@ -567,11 +567,14 @@ function Editor(props) {
     setActiveInformation(information[sections[activeSectionKey]]);
   }, [information]);
 
+  //* If the input is given value = input else ""
   useEffect(() => {
     const details = activeInformation?.details;
     if (!details) return;
 
     const activeInfo = information[sections[activeSectionKey]];
+    
+    
     setValues({
       overview: activeInfo.details[activeDetailIndex]?.overview || "",
       link: activeInfo.details[activeDetailIndex]?.link || "",
@@ -604,7 +607,8 @@ function Editor(props) {
           </div>
         ))}
       </div>
-
+      
+      {/* Prefilled Sective Titles */}
       <div className={styles.body}>
         <InputControl
           label="Title"
@@ -613,6 +617,7 @@ function Editor(props) {
           onChange={(event) => setSectionTitle(event.target.value)}
         />
 
+        {/* Chips work here */}
         <div className={styles.chips}>
           {activeInformation?.details
             ? activeInformation?.details?.map((item, index) => (

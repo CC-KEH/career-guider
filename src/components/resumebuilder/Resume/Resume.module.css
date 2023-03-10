@@ -1,5 +1,5 @@
 .container {
-    --color: #239ce2;
+    color: #239ce2;
     min-width: 700px;
     max-width: 850px;
     margin: 0 auto;
