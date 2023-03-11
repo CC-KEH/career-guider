@@ -14,14 +14,13 @@
     border-radius: 1rem;
     background: #fbfbfb;
     box-shadow: 10px 10px 30px #e8e8e8,-10px -10px 30px #ffffff;
-    transition: 0.3s;
+    transition: 0.5s;
    }
    
    input:focus {
-    outline-color: #e8e8e8;
-    background: #e8e8e8;
-    box-shadow: inset 20px 20px 60px #c5c5c5,
-       inset -20px -20px 60px #ffffff;
+    outline-color: #f7f7f7;
+    background: #f8f8f8;
+    box-shadow: inset 20px 20px 60px #eaeaea,inset -20px -20px 60px #ffffff;
     transition: 0.3s;
    }
 

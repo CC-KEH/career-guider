@@ -8,9 +8,7 @@ function Login() {
     email:"",
     password:""
     })
-    
     const [isMouseOver, setMouseOver] = useState(false) 
-
     function handleMouseOver(){
         setMouseOver(true);
     }
@@ -26,7 +24,6 @@ function Login() {
             console.log(error);
         }
     }
-
     return(
         <form className="form">
         <h1>Welcome back</h1>
