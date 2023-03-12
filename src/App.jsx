@@ -6,7 +6,7 @@ import Welcome from './components/Welcome'
 import Profile from './components/Profile'
 import TemplateScreen from './components/resumebuilder/TemplateScreen'
 import Navbar from './components/otherComponents/Navbar/Navbar'
-
+import Chatscreen from './chatbot/Chatscreen'
 function App() {
   return (
     <BrowserRouter>
@@ -14,7 +14,7 @@ function App() {
         {/* <Route path='/' element={<Register/>}/> */}
         {/* <Route path='/' element={<TemplateScreen/>}/> */}
         {/* <Route path='/' element={<Navbar/>}/> */}
-        <Route path='/' element={<Register/>}/>
+        <Route path='/' element={<Chatscreen/>}/>
         <Route path='/profile' element={<Profile/>}/>
       </Routes>
     </BrowserRouter>
