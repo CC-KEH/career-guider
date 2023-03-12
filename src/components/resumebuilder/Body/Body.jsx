@@ -71,8 +71,10 @@ function Body() {
       <p className={styles.heading}>Resume Builder</p>
       <div className={styles.toolbar}>
         <div className={styles.colors}>
+        <p className={styles.subheading}>Select the color</p>
+        
           {colors.map((item) => (
-            <span
+            <span 
               key={item}
               style={{ backgroundColor: item }}
               className={`${styles.color} ${
@@ -80,6 +82,7 @@ function Body() {
               }`}
               onClick={() => setActiveColor(item)}
             />
+          
           ))}
         </div>
         <ReactToPrint
@@ -99,6 +102,7 @@ function Body() {
           information={resumeInformation}
           setInformation={setResumeInformation}
         />
+
         <Resume
           ref={resumeRef}
           sections={sections}

@@ -1,14 +1,14 @@
 //TODO: Give error if password and confirm password dont match
 //TODO: Style the placeholder in input properly
-//TODO: Increase the size of Welcome Text
 
 import React, {useState} from 'react'
-import { account } from '../../appwrite/AppwriteConfig'
+import { account } from '../../../appwrite/AppwriteConfig'
 import { Navigate, useNavigate } from 'react-router-dom'
 import {v4 as uuidv4} from 'uuid'
-import Input from '../otherComponents/Input'
+import Input from '../../otherComponents/Input/Input'
+import styles from '../auth.module.css';
 
-function Signup() {
+function Register() {
     const navigate = useNavigate();
     const [user, setUser] = useState({
     name: "",
@@ -40,10 +40,8 @@ function Signup() {
     }
 
     return(
-        <form className="form">
+        <form className={styles.container}>
         <h1>Welcome {user.name}</h1>
-
-        <br></br>  
         <Input
         onChange={(e)=>{
             setUser({
@@ -62,7 +60,7 @@ function Signup() {
             })
         }} 
         type="text" 
-        placeholder="email"
+        placeholder="Email"
         />
         <Input type="password" placeholder="Password"/>
         <Input type="password" 
@@ -85,4 +83,4 @@ function Signup() {
     );
 }
 
-export default Signup
+export default Register

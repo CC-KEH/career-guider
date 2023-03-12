@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
-import { account } from '../../appwrite/AppwriteConfig'
+import { account } from '../../../appwrite/AppwriteConfig'
 import { Navigate, useNavigate } from 'react-router-dom'
-import Input from '../otherComponents/Input';
+import Input from '../../otherComponents/Input/Input';
+import styles from '../auth.module.css';
+
 function Login() {
     const navigate = useNavigate();
     const [user, setUser] = useState({
@@ -25,10 +27,8 @@ function Login() {
         }
     }
     return(
-        <form className="form">
+        <form className={styles.container}>
         <h1>Welcome back</h1>
-
-        <br></br>  
         
         <Input
         onChange={(e)=>{
@@ -56,7 +56,7 @@ function Login() {
         onMouseOut={handleMouseOut} type="submit"
         onClick={loginUser}
         >
-        Signin</button>  
+        LOGIN</button>  
         </form>
     );
 }

@@ -1,4 +1,8 @@
 :root {
+    font-weight: 300;
+    font-family: "Source Sans Pro", sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(232, 231, 229);
     --bg: #242526;
     --bg-accent: #484a4d;
     --nav-size: 60px;
