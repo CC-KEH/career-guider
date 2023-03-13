@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { account } from '../../../appwrite/AppwriteConfig'
 import { Navigate, useNavigate } from 'react-router-dom'
 import Input from '../../otherComponents/Input/Input';
-import styles from '../auth.module.css';
+import styles from './Login.module.css';
 
 function Login() {
     const navigate = useNavigate();
@@ -27,6 +27,7 @@ function Login() {
         }
     }
     return(
+        <div className={styles.bodyy}>
         <form className={styles.container}>
         <h1>Welcome back</h1>
         
@@ -58,6 +59,7 @@ function Login() {
         >
         LOGIN</button>  
         </form>
+        </div>
     );
 }
 

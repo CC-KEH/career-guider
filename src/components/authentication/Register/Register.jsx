@@ -1,12 +1,11 @@
 //TODO: Give error if password and confirm password dont match
 //TODO: Style the placeholder in input properly
-
 import React, {useState} from 'react'
 import { account } from '../../../appwrite/AppwriteConfig'
 import { Navigate, useNavigate } from 'react-router-dom'
 import {v4 as uuidv4} from 'uuid'
 import Input from '../../otherComponents/Input/Input'
-import styles from '../auth.module.css';
+import styles from './Register.module.css';
 
 function Register() {
     const navigate = useNavigate();
@@ -40,6 +39,7 @@ function Register() {
     }
 
     return(
+        <div className={styles.bodyy}>
         <form className={styles.container}>
         <h1>Welcome {user.name}</h1>
         <Input
@@ -80,6 +80,7 @@ function Register() {
         >
         Register</button>  
         </form>
+        </div>
     );
 }
 

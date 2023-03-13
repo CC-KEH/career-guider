@@ -71,7 +71,7 @@ function Body() {
       <p className={styles.heading}>Resume Builder</p>
       <div className={styles.toolbar}>
         <div className={styles.colors}>
-        <p className={styles.subheading}>Select the color</p>
+          <span className={styles.subheading}>Select the color</span>
         
           {colors.map((item) => (
             <span 

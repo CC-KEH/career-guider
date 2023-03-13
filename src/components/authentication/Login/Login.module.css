@@ -1,7 +1,12 @@
+.bodyy {
+    background: linear-gradient(127deg, #D4E7FE 0.60%, #FFFFFF 35.5%);
+    height: 80vh;
+}
+
 .container{
     border-radius: 18px;
-    background: #f3f0f0;
-    box-shadow:  27px 27px 54px #e2e2e2,-27px -27px 54px #ffffff;
+    background: #f3f3f3;
+    box-shadow:  27px 27px 54px #e7e7e7,-27px -27px 54px #ffffff;
     position: relative;
     margin: 10% 35%;
     padding: 50px 0;
