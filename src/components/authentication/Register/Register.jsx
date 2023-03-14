@@ -6,6 +6,7 @@ import { Navigate, useNavigate } from 'react-router-dom'
 import {v4 as uuidv4} from 'uuid'
 import Input from '../../otherComponents/Input/Input'
 import styles from './Register.module.css';
+import NavbarIn from '../../otherComponents/Navbar/NavbarIn'
 
 function Register() {
     const navigate = useNavigate();
@@ -20,7 +21,7 @@ function Register() {
         promise.then(
             function(response){
                 console.log(response);
-                navigate('/profile');   //*Success
+                navigate('/HomeScreen');   //*Success
             },
             function(error){
                 console.log(error);     //*Failure

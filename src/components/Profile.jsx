@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '../components/otherComponents/Navbar/Navbar'
+import NavbarIn from '../components/otherComponents/Navbar/NavbarIn'
 function Profile() {
   return (
     <div>
-      <Navbar/>
+      <NavbarIn/>
     </div>
   )
 }

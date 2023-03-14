@@ -1,13 +1,14 @@
-//Project ID: 6404462d007d5857a9ff
-//API Endpoint: http://localhost/v1
+// ProjectID: 640f8e595b78601fbaca
+// DatabaseID: 640f8ef53582ddb83f54
+// API Endpoint: http://localhost/v1
 
 import {Client,Account,Databases} from 'appwrite'
 
 const client = new Client();
-client.setEndpoint('http://localhost/v1').setProject('6404462d007d5857a9ff');
+client.setEndpoint('http://localhost/v1').setProject('640f8e595b78601fbaca');
 
 export const account = new Account(client)
 
 //*Databases
 
-export const databases = new Databases(client,'6404469f86b58551d21c')
+export const databases = new Databases(client,'640f8ef53582ddb83f54')

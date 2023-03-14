@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../otherComponents/Navbar/Navbar'
+import NavbarIn from '../otherComponents/Navbar/NavbarIn'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './HomeScreen.module.css'
 import frontimageSvg from '../../assets/homescreen_images/frontimage.svg';
@@ -13,7 +13,7 @@ function HomeScreen() {
     
     return (
     <div className={styles.bodyy}>
-    <Navbar/>    
+    <NavbarIn/>    
     <section>
       <div className={sectionContainer}>
         <div className={sectionContainerRow}>

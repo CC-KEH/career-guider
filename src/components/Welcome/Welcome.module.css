@@ -1,0 +1,87 @@
+.bodyy {
+    background: linear-gradient(125.36deg, #D4E7FE 1.55%, #FFFFFF 44.5%);
+    display: flex;
+    flex-direction: column;
+}
+.navbtn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    background: #217BF4;
+    box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
+    border-radius: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbtn:hover {
+background: #334de6;
+box-shadow: 0 0 30px 1px #bdd0fb;
+-webkit-transition: all 0.2s ease-out;
+-moz-transition: all 0.2s ease-out;
+transition: all 0.2s ease-out;
+}
+
+.navbar {
+
+}
+
+.navbar_brand {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+    color: #2B2B39 !important;
+}
+
+.nav_link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+    letter-spacing: 0.01em;
+    color: #2B2B39;
+}
+
+.herotext{
+    color: #0A093D;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+}
+
+.blue_text{
+    background: linear-gradient(270deg, rgba(214, 238, 255, 0.2) -75.28%, rgba(86, 178, 244, 0) 90.58%), #217BF4;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.blue_text:hover{
+    background: linear-gradient(270deg, rgba(248, 255, 214, 0.2) -75.28%, rgba(205, 244, 86, 0) 90.58%), #334de6;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow:0px 0px 40px #bdd0fb;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.herosub{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    color: #656464;
+}
+.pagetwo{
+    margin: 0px;
+    background: linear-gradient(45.36deg, #D4E7FE 1.55%, #FFFFFF 45.5%);
+    width: 100%;
+    height: 40vh;
+}

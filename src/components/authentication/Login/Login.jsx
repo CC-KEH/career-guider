@@ -21,7 +21,7 @@ function Login() {
         e.preventDefault();
         try {
             await account.createEmailSession(user.email,user.password);
-            navigate('/profile');
+            navigate('/HomeScreen');
         } catch (error) {
             console.log(error);
         }
