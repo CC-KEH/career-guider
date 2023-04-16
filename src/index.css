@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
     font-weight: 300;
     font-family: "Source Sans Pro", sans-serif;

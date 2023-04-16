@@ -10,17 +10,17 @@ import CommunityPage from './components/CommunityPage/CommunityPage'
 import Welcome from './components/Welcome/Welcome'
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Welcome/>}/>
-        <Route path='/Register' element={<Register/>}/>
-        <Route path='/Login' element={<Login/>}/>
-        <Route path='/ResumeBuilder' element={<TemplateScreen/>}/>
-        <Route path='/HomeScreen' element={<HomeScreen/>}/>
-        <Route path='/Blog' element={<BlogPage/>}/>
-        <Route path='/Community' element={<CommunityPage/>}/>
-      </Routes>
-    </BrowserRouter>
+     <BrowserRouter>
+       <Routes>
+         <Route path='/' element={<Welcome/>}/>
+         <Route path='/Register' element={<Register/>}/>
+         <Route path='/Login' element={<Login/>}/>
+         <Route path='/ResumeBuilder' element={<TemplateScreen/>}/>
+         <Route path='/HomeScreen' element={<HomeScreen/>}/>
+         <Route path='/Blog' element={<BlogPage/>}/>
+         <Route path='/Community' element={<CommunityPage/>}/>
+       </Routes>
+     </BrowserRouter>
   );
 }
 
