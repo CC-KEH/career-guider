@@ -1,0 +1,13 @@
+.mainbox{
+    border-radius: 14px;
+    width: 800px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  5px 5px 11px #bababa,-5px -5px 11px #ffffff;
+}
+.header{
+    height: 40px;
+    align-items: center;
+}
+.editor{
+    height: 300px;
+}
