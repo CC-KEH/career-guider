@@ -1,15 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root {
-    font-weight: 300;
-    font-family: "Source Sans Pro", sans-serif;
-    box-sizing: border-box;
-    /* background-color: rgb(255, 255, 255); */
-    background: linear-gradient(125.36deg, #D4E7FE 1.55%, #FFFFFF 44.5%);
-    --bg: #242526;
-    --bg-accent: #484a4d;
-    --nav-size: 60px;
-    --border: 1px solid #474a4d;
-    --speed: 500ms;
-}

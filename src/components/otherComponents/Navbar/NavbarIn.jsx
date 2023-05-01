@@ -2,7 +2,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "./NavbarIn.module.css"
 import { Navigate, useNavigate,Link } from 'react-router-dom'
-import { account } from '../../../appwrite/AppwriteConfig'
+import { account } from '../../../appwrite/appwriteConfig';
 function NavbarIn() {
   const navitem = 'nav-item px-2';
   const navToggler = 'navbar-toggler';

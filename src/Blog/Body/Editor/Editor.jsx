@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Editor.module.css'
-  function Editor(props) {
+  function BlogEditor(props) {
     const handleSubmit= (e) => {
       e.preventDefault();
     }
@@ -42,4 +42,4 @@ import styles from './Editor.module.css'
     )
   }
 
-  export default Editor;
+  export default BlogEditor;
