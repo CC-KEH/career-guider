@@ -14,10 +14,12 @@ import TemplateScreen from './ResumeBuilder/TemplateScreen';
 import BlogEditor from './Blog/Body/Editor/Editor';
 import Community from './community/Community';
 import HomeScreen from './HomeScreen/HomeScreen';
+import NihaScreen from './niharika_screen/NihaScreen';
 export default function App() {
   return (
     <BrowserRouter>
     <Routes>
+      {/* <Route path='/' element={<NihaScreen/>}/> */}
       <Route path='/' element={<Welcome/>}/>
       <Route path='/Signup' element={<Signup/>}/>
       <Route path='/Login' element={<Login/>}/>
