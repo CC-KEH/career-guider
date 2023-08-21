@@ -12,7 +12,7 @@ function Welcome() {
     <>
     <div className="bg-white w-full h-20 mb-10 shadow-md px-4 md:px-0 fixed z-10 container-fluid">
 		<div className="flex container mx-auto justify-between items-center h-full">
-		<h1 className="logo me-auto text-2xl img-fluid"><a href="index.html" onClick={handleRefresh}>Abstrato</a></h1>
+		<h1 className={styles["logo me-auto text-2xl img-fluid"]}><a href="/" onClick={handleRefresh}>Abstrato</a></h1>
 			<div className="flex self-end items-end h-full w-auto space-x-4">
 				<Link to="/Signup" className="hidden sm:flex font-bold text-xl text-gray-800 border-b-4 border-green-700 pb-2 px-3 items-center h-5/6">Jobs</Link>
 				<Link to="/Signup" className="hidden md:flex text-xl text-gray-500 border-b-4 border-transparent hover:border-gray-200 pb-2 px-3 items-center h-5/6 ">Courses</Link>

@@ -16,7 +16,7 @@
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "appwrite": "^11.0.0",
-    "bootstrap": "^5.2.3",
+    "bootstrap": "^5.3.1",
     "bootstrap-datepicker": "^1.9.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
