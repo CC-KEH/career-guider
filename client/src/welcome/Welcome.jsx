@@ -1,77 +1,101 @@
-import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
-import ProgressBar from '../HomeScreen/ProgressBar';
-import styles from './Welcome.module.css';
+import React from "react";
+import styles from './NewHome.module.css';
+import career_progress from '../assets/homescreen/career_progress.svg';
+import search from '../assets/homescreen/search.svg';
+import mainline from '../assets/homescreen/mainline.svg';
+import navline from '../assets/homescreen/navline.svg';
+import dropdown from '../assets/homescreen/dropdown.svg';
+import body2 from  '../assets/homescreen/body2.svg';
+import community from '../assets/homescreen/community.svg';
+import trackprogress from '../assets/homescreen/trackprogress.svg';
+import resume from '../assets/homescreen/resume.svg';
 import { Navigate, useNavigate,Link } from 'react-router-dom'
-import frontsvg from  '../assets/resumebuilder_images/frontimage.svg'
-function Welcome() {
-    const handleRefresh = () => {
-		window.location.reload();
-	  };
-  return (
-    <>
-    <div className="bg-white w-full h-20 mb-10 shadow-md px-4 md:px-0 fixed z-10 container-fluid">
-		<div className="flex container mx-auto justify-between items-center h-full">
-		<h1 className={styles["logo me-auto text-2xl img-fluid"]}><a href="/" onClick={handleRefresh}>Abstrato</a></h1>
-			<div className="flex self-end items-end h-full w-auto space-x-4">
-				<Link to="/Signup" className="hidden sm:flex font-bold text-xl text-gray-800 border-b-4 border-green-700 pb-2 px-3 items-center h-5/6">Jobs</Link>
-				<Link to="/Signup" className="hidden md:flex text-xl text-gray-500 border-b-4 border-transparent hover:border-gray-200 pb-2 px-3 items-center h-5/6 ">Courses</Link>
-				<Link to="/Signup" className="hidden md:flex text-xl text-gray-500 border-b-4 border-transparent hover:border-gray-200 pb-2 px-3 items-center h-5/6">Connect</Link>
-				<Link to="/Signup" className="hidden md:flex text-xl text-gray-500 border-b-4 border-transparent hover:border-gray-200 pb-2 px-3 items-center h-5/6">Community</Link>
-				<Link to="/Signup" className="hidden md:flex text-xl text-gray-500 border-b-4 border-transparent hover:border-gray-200 pb-2 px-3 items-center h-5/6">Build Resume</Link>
-				<Link to="/Signup" className="hidden md:flex text-xl text-gray-500 border-b-4 border-transparent hover:border-gray-200 pb-2 px-3 items-center h-5/6">Signup</Link> 	
-				<Link to="/Login" className="hidden md:flex text-xl text-gray-500 border-b-4 border-transparent hover:border-gray-200 pb-2 px-3 items-center h-5/6">Login</Link> 	
-				<svg className="text-gray-600 rounded-full hover:bg-gray-100 h-14 w-14 self-center p-3" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.8em" width="1.8em" xmlns="http://www.w3.org/2000/svg"><path d="M816 768h-24V428c0-141.1-104.3-257.7-240-277.1V112c0-22.1-17.9-40-40-40s-40 17.9-40 40v38.9c-135.7 19.4-240 136-240 277.1v340h-24c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h216c0 61.8 50.2 112 112 112s112-50.2 112-112h216c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zM512 888c-26.5 0-48-21.5-48-48h96c0 26.5-21.5 48-48 48zM304 768V428c0-55.6 21.6-107.8 60.9-147.1S456.4 220 512 220c55.6 0 107.8 21.6 147.1 60.9S720 372.4 720 428v340H304z"></path></svg>
-        		<svg className="text-gray-600 rounded-full hover:bg-gray-100 h-14 w-14 self-center p-3"  stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24"  height="1.8em" width="1.8em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-			</div>
-		</div>
-	</div>
-    <div className="hidden md:flex container mx-auto space-x-3 pt-20"></div>
-    <div className={styles.header_container}>
-      <div className={styles.left}>
-        <p className={styles.heading}>
-          Welcome to <span>Abstrato</span>.
-        </p>
-        <p className={styles.heading}>
-          Need a hand?
-        </p>
-        <p className={styles.heading}>
-        It's <span>free</span>
-        </p>
+export const Welcome = () => {
+    return (
+        <>
+      <div className={styles.header}>
+        <div className={styles.div}>
+          <div className={styles.overlap}>
+            <div className={styles.text}>
+              <div className={styles["button-about-more"]}>
+                <div className={styles["overlap-group"]}>
+                  <div className={styles["text-wrapper"]}>About More</div>
+                </div>
+              </div>
+              <div className={styles["button-invite-friend"]}>
+                <div className={styles["div-wrapper"]}>
+                  <div className={styles["text-wrapper-2"]}>Invite Friend</div>
+                </div>
+              </div>
+              <p className={styles.p}>Your dream job is within reach. Let us show you the path to get there.</p>
+              <img className={styles["unlock-your-dream"]} alt="Unlock your dream" src={mainline} />
+            </div>
+          </div>
+          <div className={styles.navigation}>
+            <div className={styles.logo}>
+              <div className={styles["text-wrapper-3"]}>Abstrato</div>
+            </div>
+            <div className={styles.navbar}>
+                <Link to="/Signup" className="hidden md:flex text-md text-gray-500  hover:text-black pb-2 px-3 items-center h-5/6">Jobs</Link>
+				<Link to="/Signup" className="hidden md:flex text-md text-gray-500  border-transparent hover:text-black pb-2 px-3 items-center h-5/6 ">Courses</Link>
+				<Link to="/Signup" className="hidden md:flex text-md text-gray-500  hover:text-black pb-2 px-3 items-center h-5/6">Connect</Link>
+				<Link to="/Signup" className="hidden md:flex text-md text-gray-500  hover:text-black pb-2 px-3 items-center h-5/6">Resume</Link>
+				<Link to="/Signup" className="hidden md:flex text-md text-gray-500  hover:text-black pb-2 px-3 items-center h-5/6">Signup</Link> 	
+				<Link to="/Login" className="hidden md:flex text-md text-gray-500  hover:text-black pb-2 px-3 items-center h-5/6">Login</Link> 	
+            </div>
+            <img className={styles.line} alt="Line" src={navline} />
+          </div>
+          <img className={styles["undraw-career"]} alt="Undraw career" src={career_progress} />
+        </div>       
       </div>
-      <div className={styles.right}>
-        <img src={frontsvg} alt="Front-Image" />
+        {/* Body 1 */}
+        <div className={styles["body-page"]}>
+      <div className={styles["overlap-group-wrapper"]}>
+        <div className={styles["overlap-group"]}>
+          <p className={styles["learn-with-your"]}>
+            <span className={styles["text-wrapper"]}>Learn with your </span>
+            <span className={styles.span}>friends</span>
+            <span className={styles["text-wrapper"]}>, Connect with new people. Grow with the </span>
+            <span className={styles["text-wrapper-2"]}>Community.</span>
+            <span className={styles["text-wrapper"]}>&nbsp;</span>
+          </p>
+          <img className={styles["community-cropped"]} alt="Community cropped" src={community} />
+        </div>
       </div>
     </div>
-    <div className={styles.container}>
-      <div className={styles.progressContainer}>
-          <div className={styles.progressBar}>
-            <ProgressBar/>
-          </div>        
-          <div className={styles.text}>
-            Python
-          </div>
-      </div>
-      <div className={styles.progressContainer}>
-          <div className={styles.progressBar}>
-            <ProgressBar/>
-          </div>        
-          <div className={styles.text}>
-            React
-          </div>
-      </div>
-      <div className={styles.progressContainer}>
-          <div className={styles.progressBar}>
-            <ProgressBar/>
-          </div>        
-          <div className={styles.text}>
-            Html
-          </div>
+
+    {/* Body2 */}
+    <div className={styles["body2-page"]}>
+      <div className={styles["overlap-group-wrapper"]}>
+        <div className={styles["overlap-group"]}>
+          <img
+            className={styles["track-your-progress"]}
+            alt="Track your progress"
+            src={trackprogress}
+          />
+          <img className={styles["undraw-progress"]} alt="Undraw progress" src={body2} />
+        </div>
       </div>
     </div>
-    </>
-
-  )
-}
-
-export default Welcome
+    {/* Body 3 */}
+    <div className={styles["body3-page"]}>
+      <div className={styles["overlap-group-wrapper"]}>
+        <div className={styles["overlap-group"]}>
+          <img className={styles["undraw-organize"]} alt="Undraw organize" src={resume}/>
+          <p className={styles["got-the-skills-build"]}>
+            <span className={styles["text-wrapper"]}>
+              Got the Skills?
+              <br />
+              Build a{" "}
+            </span>
+            <span className={styles.span}>Resume</span>
+            <span className={styles["text-wrapper"]}> that gets you selected, by using our templates. It’s </span>
+            <span className={styles.span}>free</span>
+            <span className={styles["text-wrapper"]}>&nbsp;</span>
+          </p>
+        </div>
+      </div>
+    </div>
+      </>
+    );
+  };
