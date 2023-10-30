@@ -1,0 +1,521 @@
+.header {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: max-content;
+}
+
+.header .div {
+  background: rgb(212,231,254);
+  background: linear-gradient(143deg, rgba(212,231,254,1) 1%, rgba(255,255,255,1) 51%);
+  background-size: 100% 100%;
+  height: 800px;
+  position: relative;
+  width: 1500px;
+}
+
+.header .overlap {
+  height: 310px;
+  left: 135px;
+  position: absolute;
+  top: 271px;
+  width: 519px;
+}
+
+.header .text {
+  height: 310px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 519px;
+}
+
+.header .button-about-more {
+  color: #006be8;  
+  height: 62px;
+  left: 0;
+  position: absolute;
+  top: 248px;
+  width: 164px;
+  cursor: pointer;
+}
+
+.header .button-about-more :hover{
+  background-color: #217bf4;
+  border-radius: 14px;
+  color: #ffffff;
+}
+
+.header .overlap-group {
+  border: 1px solid;
+  border-color: #217bf480;
+  border-radius: 14px;
+  height: 62px;
+  position: relative;
+  width: 167px;
+}
+.header .text-wrapper {
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 42px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  text-align: center;
+  top: 24px;
+  white-space: nowrap;
+}
+.header .button-invite-friend {
+  height: 62px;
+  left: 180px;
+  position: absolute;
+  top: 248px;
+  width: 169px;
+  cursor: pointer;
+  color: #217bf4;
+}
+.header .button-invite-friend :hover{
+  background-color: #217bf4;
+  border-radius: 14px;
+  color: #ffffff;
+}
+.header .div-wrapper {
+  border: 1px solid;
+  border-color: #217bf480;
+  border-radius: 14px;
+  height: 62px;
+  position: relative;
+  width: 167px;
+}
+.header .text-wrapper-2 {
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  left: 41px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  text-align: center;
+  top: 23px;
+  white-space: nowrap;
+}
+
+.header .p {
+  color: #656464;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 28px;
+  position: absolute;
+  top: 150px;
+  width: 491px;
+}
+
+.header .unlock-your-dream {
+  height: 118px;
+  left: -1px;
+  position: absolute;
+  top: 12px;
+  width: 513px;
+}
+
+.header .navigation {
+  height: 68px;
+  left: 0;
+  position: absolute;
+  top: 22px;
+  width: 1440px;
+}
+
+.header .logo {
+  height: 24px;
+  left: 82px;
+  position: absolute;
+  top: 13px;
+  width: 109px;
+}
+
+.header .text-wrapper-3 {
+  color: #2b2b39;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.header .navbar {
+  height: 14px;
+  left: 800px;
+  position: absolute;
+  top: 23px;
+  width: 461px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header .text-wrapper-4 {
+  color: #2b2b39;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 14px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0.14px;
+  line-height: 14px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.header .community {
+  height: 14px;
+  left: 73px;
+  position: absolute;
+  top: 0;
+  width: 94px;
+}
+
+.header .text-wrapper-5 {
+  color: #656464;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0.14px;
+  line-height: 14px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.header .caret-down {
+  height: 9px;
+  left: 83px;
+  position: absolute;
+  top: 3px;
+  width: 9px;
+}
+
+.header .text-wrapper-6 {
+  color: #656464;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  left: 197px;
+  letter-spacing: 0.14px;
+  line-height: 14px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.header .text-wrapper-7 {
+  color: #656464;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  left: 260px;
+  letter-spacing: 0.14px;
+  line-height: 14px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.header .text-wrapper-8 {
+  color: #656464;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  left: 349px;
+  letter-spacing: 0.14px;
+  line-height: 14px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.header .button {
+  height: 50px;
+  left: 1182px;
+  position: absolute;
+  top: 0;
+  width: 125px;
+  cursor: pointer;
+}
+
+.header .overlap-group-2 {
+  background-color: #217bf4;
+  border-radius: 14px;
+  box-shadow: 0px 7px 22px -6px #207bf457;
+  height: 50px;
+  position: relative;
+  width: 123px;
+}
+
+.header .text-wrapper-9 {
+  color: #ffffff;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  left: 44px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  text-align: center;
+  top: 18px;
+  white-space: nowrap;
+}
+
+.header .search {
+  height: 14px;
+  left: 1040px;
+  position: absolute;
+  top: 18px;
+  width: 105px;
+}
+
+.header .overlap-2 {
+  height: 14px;
+  position: relative;
+  width: 107px;
+}
+
+.header .rectangle {
+  background-color: #f2f2f2;
+  height: 14px;
+  left: 6px;
+  position: absolute;
+  top: 0;
+  width: 92px;
+}
+
+.header .ellipse {
+  background-color: #f2f2f2;
+  border-radius: 6.3px/7px;
+  height: 14px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 13px;
+}
+
+.header .ellipse-2 {
+  background-color: #f2f2f2;
+  border-radius: 6.3px/7px;
+  height: 14px;
+  left: 92px;
+  position: absolute;
+  top: 0;
+  width: 13px;
+}
+
+.header .search-here {
+  height: 14px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 107px;
+}
+
+.header .text-wrapper-10 {
+  color: #686868;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 21px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 84px;
+}
+
+.header .magnifying-glass {
+  height: 12px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 13px;
+}
+
+.header .line {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 67px;
+  width: 1440px;
+}
+
+.header .undraw-career {
+  height: 474px;
+  object-fit: cover;
+  /* left: 800px; */
+  right: 10px;
+  position: absolute;
+  top: 233px;
+  width: 573px;
+}
+
+
+/* Body1 */
+.body-page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: max-content;
+}
+
+.body-page .overlap-group-wrapper {
+  background-color: #ffffff;
+  height: 800px;
+  width: 1500px;
+}
+
+.body-page .overlap-group {
+  background: rgb(100,62,249);
+  background: linear-gradient(70deg, rgba(100,62,249,1) 33%, rgba(255,255,255,1) 33%);
+  height: 800px;
+  position: relative;
+}
+
+.body-page .learn-with-your {
+  color: transparent;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 48px;
+  font-weight: 600;
+  left: 93px;
+  letter-spacing: 0;
+  line-height: 90px;
+  position: absolute;
+  top: 186px;
+  width: 560px;
+}
+
+.body-page .text-wrapper {
+  color: #000000;
+}
+
+.body-page .span {
+  color: #633ef8;
+}
+
+.body-page .text-wrapper-2 {
+  color: #ffffff;
+}
+
+.body-page .community-cropped {
+  height: 513px;
+  right: 30px;
+  object-fit: cover;
+  position: absolute;
+  top: 154px;
+  width: 600px;
+}
+
+
+/* Body2 */
+.body2-page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: max-content;
+}
+
+.body2-page .overlap-group-wrapper {
+  background-color: #ffffff;
+  height: 800px;
+  width: 1500px;
+}
+
+.body2-page .overlap-group {
+  /* background: rgb(233,154,1); */
+  background: linear-gradient(295.5deg, rgba(233,154,1,1) 44%, rgba(255,255,255,1) 0%);
+  background-size: 100% 100%;
+  height: 1200px;
+  position: relative;
+}
+
+.body2-page .track-your-progress {
+  height: 317px;
+  left: 721px;
+  position: absolute;
+  top: 180px;
+  width: 601px;
+}
+
+.body2-page .undraw-progress {
+  height: 443px;
+  object-fit: cover;
+  left: 10px;
+  top: 90px;
+  position: absolute;
+  margin-top: 10px;
+  width: 652px;
+}
+
+/* body 3 */
+.body3-page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: max-content;
+}
+
+.body3-page .overlap-group-wrapper {
+  background-color: #ffffff;
+  height: 800px;
+  width: 1500px;
+}
+
+.body3-page .overlap-group {
+  background: rgb(43,43,57);
+  background: linear-gradient(11deg, rgba(43,43,57,1) 20%, rgba(255,255,255,1) 20%);
+  background-size: 100% 100%;
+  height: 800px;
+  position: relative;
+}
+
+.body3-page .undraw-organize {
+  height: 561px;
+  right: 10px;
+  object-fit: cover;
+  position: absolute;
+  top: 92px;
+  width: 552px;
+}
+
+.body3-page .got-the-skills-build {
+  color: transparent;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 50px;
+  font-weight: 600;
+  left: 70px;
+  letter-spacing: 0;
+  line-height: 90px;
+  position: absolute;
+  top: 112px;
+  width: 599px;
+}
+
+.body3-page .text-wrapper {
+  color: #000000;
+}
+
+.body3-page .span {
+  color: #006be8;
+}
