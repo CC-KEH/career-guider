@@ -1,0 +1,84 @@
+{
+    "job_courses": [
+        {
+            "job_title": "Software Developer",
+            "recommended_courses": [
+                "Full Stack Web Development on Udemy",
+                "Python for Data Science on Coursera",
+                "JavaScript Fundamentals on edX"
+            ]
+        },
+        {
+            "job_title": "Data Analyst",
+            "recommended_courses": [
+                "Data Analysis and Visualization with Python on Coursera",
+                "Excel for Data Analysis on LinkedIn Learning",
+                "SQL for Data Science on edX"
+            ]
+        },
+        {
+            "job_title": "Graphic Designer",
+            "recommended_courses": [
+                "Graphic Design Specialization on Coursera",
+                "Adobe Photoshop CC - Essentials Training Course on Udemy",
+                "User Experience Design Fundamentals on edX"
+            ]
+        },
+        {
+            "job_title": "Network Engineer",
+            "recommended_courses": [
+                "Cisco CCNA 200-301 - The Complete Guide on Udemy",
+                "Network Security Fundamentals on Coursera",
+                "CCNP Enterprise - Advanced Routing on LinkedIn Learning"
+            ]
+        },
+        {
+            "job_title": "Marketing Manager",
+            "recommended_courses": [
+                "Digital Marketing Specialization on Coursera",
+                "Social Media Marketing Specialization on Coursera",
+                "Marketing Analytics on edX"
+            ]
+        },
+        {
+            "job_title": "Data Scientist",
+            "recommended_courses": [
+                "Machine Learning on Coursera",
+                "Data Science Specialization on edX",
+                "Deep Learning Specialization on Coursera"
+            ]
+        },
+        {
+            "job_title": "UX Designer",
+            "recommended_courses": [
+                "User Experience Design on Udemy",
+                "UX Design Fundamentals on Coursera",
+                "Interaction Design Specialization on Coursera"
+            ]
+        },
+        {
+            "job_title": "Network Administrator",
+            "recommended_courses": [
+                "Network Administration Fundamentals on edX",
+                "Cisco CCNP Routing and Switching on Udemy",
+                "Network Troubleshooting and Security on LinkedIn Learning"
+            ]
+        },
+        {
+            "job_title": "Content Writer",
+            "recommended_courses": [
+                "Writing for the Web on Coursera",
+                "Content Marketing Fundamentals on LinkedIn Learning",
+                "Professional Writing on edX"
+            ]
+        },
+        {
+            "job_title": "Financial Analyst",
+            "recommended_courses": [
+                "Financial Modeling on Coursera",
+                "Financial Analysis on edX",
+                "Investment Analysis and Portfolio Management on edX"
+            ]
+        }
+    ]
+}

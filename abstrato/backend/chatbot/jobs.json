@@ -1,0 +1,44 @@
+{
+    "jobs": [
+        {
+            "job_title": "Software Developer",
+            "skills_required": ["Java", "Python", "JavaScript", "SQL", "Web Development"]
+        },
+        {
+            "job_title": "Data Analyst",
+            "skills_required": ["Data Analysis", "SQL", "Excel", "Data Visualization"]
+        },
+        {
+            "job_title": "Graphic Designer",
+            "skills_required": ["Adobe Creative Suite", "Illustration", "UI/UX Design", "Photoshop"]
+        },
+        {
+            "job_title": "Network Engineer",
+            "skills_required": ["Network Configuration", "Cisco", "Firewalls", "Routing Protocols"]
+        },
+        {
+            "job_title": "Marketing Manager",
+            "skills_required": ["Marketing Strategy", "SEO", "Social Media Marketing", "Content Marketing"]
+        },
+        {
+            "job_title": "Data Scientist",
+            "skills_required": ["Machine Learning", "Python", "Data Analysis", "Big Data", "Statistics"]
+        },
+        {
+            "job_title": "UX Designer",
+            "skills_required": ["User Research", "Wireframing", "Prototyping", "Usability Testing", "UI Design"]
+        },
+        {
+            "job_title": "Network Administrator",
+            "skills_required": ["Network Troubleshooting", "Windows Server", "LAN/WAN", "Security"]
+        },
+        {
+            "job_title": "Content Writer",
+            "skills_required": ["Writing", "Editing", "SEO", "Content Creation"]
+        },
+        {
+            "job_title": "Financial Analyst",
+            "skills_required": ["Financial Modeling", "Data Analysis", "Excel", "Finance"]
+        }
+    ]
+}
