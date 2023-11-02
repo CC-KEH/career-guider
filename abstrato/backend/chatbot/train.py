@@ -33,20 +33,18 @@ for intent in intents['intents']:
 # Extract skills-to-jobs mapping data
 for job_entry in jobs_data['jobs']:
     job_title = job_entry['job_title']
-    skills_required = job_entry['skills_required']
     tags.append(job_title)  # Add job titles as tags
-    for skill in skills_required:
-        w = tokenize(skill)
+    for pattern in job_entry['patterns']:
+        w = tokenize(pattern)
         all_words.extend(w)
         xy.append((w, job_title))
 
 # Extract jobs-to-courses mapping data
 for job_entry in courses_data['job_courses']:
     job_title = job_entry['job_title']
-    recommended_courses = job_entry['recommended_courses']
     tags.append(job_title)  # Add job titles as tags
-    for course in recommended_courses:
-        w = tokenize(course)
+    for pattern in job_entry['patterns']:
+        w = tokenize(pattern)
         all_words.extend(w)
         xy.append((w, job_title))
 
@@ -79,14 +77,14 @@ class ChatDataset(Dataset):
 
     def __len__(self):
         return self.n_samples
-
 # Hyperparameters
-batch_size = 16  # Increase batch size to improve learning
-hidden_size = 32  # Increase model complexity
-output_size = len(tags) + 1  # Plus 1 for the new intent "job_recommendation"
+batch_size = 32  # Increase batch size further
+hidden_size = 16  # Decrease model complexity
+output_size = len(tags) + 2  # Plus 1 for the new intent "job_recommendation"
 input_size = len(X_train[0])
-learning_rate = 0.001
-num_epochs = 1000
+learning_rate = 0.001  # Keep learning rate the same
+num_epochs = 500  # Decrease the number of epochs
+
 
 dataset = ChatDataset()
 train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True)

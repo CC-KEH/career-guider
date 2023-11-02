@@ -2,43 +2,152 @@
     "jobs": [
         {
             "job_title": "Software Developer",
-            "skills_required": ["Java", "Python", "JavaScript", "SQL", "Web Development"]
+            "patterns": [
+                "What job matches my skills in Java, Python, JavaScript, SQL, and Web Development?",
+                "Recommend me a job based on my skills in Java, Python, JavaScript, SQL, and Web Development",
+                "I have worked in Python, Java, JavaScript, SQL, and Web Development"
+            ],
+            "responses": [
+                "You should explore opportunities in Software Engineering roles.",
+                "Consider looking into Software Development positions.",
+                "Software Developer roles might be a great fit for you.",
+                "Check out careers in Software Engineering."
+            ]
         },
         {
             "job_title": "Data Analyst",
-            "skills_required": ["Data Analysis", "SQL", "Excel", "Data Visualization"]
+            "patterns": [
+                "Suggest jobs for someone skilled in Data Analysis, SQL, Excel, and Data Visualization",
+                "Data Analyst job recommendations for skills in Data Analysis, SQL, Excel, and Data Visualization",
+                "What job can I get with skills in SQL, Excel, Data Visualization, and Data Analysis?",
+                "I have worked in Data Analysis, SQL, Excel, and Data Visualization"
+            ],
+            "responses": [
+                "You should explore opportunities in Data Analysis and Analytics roles.",
+                "Consider looking into Data Analyst positions.",
+                "Data Analyst roles might be a great fit for you.",
+                "Check out careers in Data Analysis and Analytics."
+            ]
         },
         {
             "job_title": "Graphic Designer",
-            "skills_required": ["Adobe Creative Suite", "Illustration", "UI/UX Design", "Photoshop"]
+            "patterns": [
+                "Recommend job positions for Graphic Designers with skills in Adobe Creative Suite, Illustration, UI/UX Design, and Photoshop",
+                "Graphic Designer career options with expertise in Adobe Creative Suite, Illustration, UI/UX Design, and Photoshop",
+                "What job is suitable for a Graphic Designer with skills in Adobe Creative Suite, Illustration, UI/UX Design, and Photoshop?",
+                "I have worked in Adobe Creative Suite, Illustration, UI/UX Design, and Photoshop"
+            ],
+            "responses": [
+                "You should explore opportunities in Graphic Design and Visual Communication roles.",
+                "Consider looking into Graphic Designer positions.",
+                "Graphic Design roles might be a great fit for you.",
+                "Check out careers in Graphic Design and Visual Communication."
+            ]
         },
         {
             "job_title": "Network Engineer",
-            "skills_required": ["Network Configuration", "Cisco", "Firewalls", "Routing Protocols"]
+            "patterns": [
+                "Jobs for Network Engineers proficient in Network Configuration, Cisco, Firewalls, and Routing Protocols",
+                "Network Engineer career recommendations with expertise in Network Configuration, Cisco, Firewalls, and Routing Protocols",
+                "What job suits a Network Engineer with skills in Network Configuration, Cisco, Firewalls, and Routing Protocols?",
+                "I have worked in Network Configuration, Cisco, Firewalls, and Routing Protocols"
+            ],
+            "responses": [
+                "You should explore opportunities in Network Engineering and IT roles.",
+                "Consider looking into Network Engineer positions.",
+                "Network Engineering roles might be a great fit for you.",
+                "Check out careers in Network Engineering and IT."
+            ]
         },
         {
             "job_title": "Marketing Manager",
-            "skills_required": ["Marketing Strategy", "SEO", "Social Media Marketing", "Content Marketing"]
+            "patterns": [
+                "What career options exist for Marketing Managers with skills in Marketing Strategy, SEO, Social Media Marketing, and Content Marketing?",
+                "Marketing Manager job opportunities with expertise in Marketing Strategy, SEO, Social Media Marketing, and Content Marketing",
+                "Job roles for Marketing Managers skilled in Marketing Strategy, SEO, Social Media Marketing, and Content Marketing",
+                "I have worked in Marketing Strategy, SEO, Social Media Marketing, and Content Marketing"
+            ],
+            "responses": [
+                "You should explore opportunities in Marketing and Brand Management roles.",
+                "Consider looking into Marketing Manager positions.",
+                "Marketing Management roles might be a great fit for you.",
+                "Check out careers in Marketing and Brand Management."
+            ]
         },
         {
             "job_title": "Data Scientist",
-            "skills_required": ["Machine Learning", "Python", "Data Analysis", "Big Data", "Statistics"]
+            "patterns": [
+                "Job recommendations for Data Scientists with skills in Machine Learning, Python, Data Analysis, Big Data, and Statistics",
+                "Data Scientist positions with expertise in Machine Learning, Python, Data Analysis, Big Data, and Statistics",
+                "Tell me about Data Scientist careers for those skilled in Machine Learning, Python, Data Analysis, Big Data, and Statistics",
+                "I have worked in Machine Learning, Python, Data Analysis, Big Data, and Statistics"
+            ],
+            "responses": [
+                "You should explore opportunities in Data Science and Machine Learning roles.",
+                "Consider looking into Data Scientist positions.",
+                "Data Scientist roles might be a great fit for you.",
+                "Check out careers in Data Science and Machine Learning."
+            ]
         },
         {
             "job_title": "UX Designer",
-            "skills_required": ["User Research", "Wireframing", "Prototyping", "Usability Testing", "UI Design"]
+            "patterns": [
+                "What jobs are available for UX Designers with skills in User Research, Wireframing, Prototyping, Usability Testing, and UI Design",
+                "UX Designer career with expertise in User Research, Wireframing, Prototyping, Usability Testing, and UI Design",
+                "Tell me about careers in UX Design for those skilled in User Research, Wireframing, Prototyping, Usability Testing, and UI Design",
+                "I have worked in User Research, Wireframing, Prototyping, Usability Testing, and UI Design"
+            ],
+            "responses": [
+                "You should explore opportunities in UX/UI Design and User Experience roles.",
+                "Consider looking into UX Designer positions.",
+                "UX/UI Design roles might be a great fit for you.",
+                "Check out careers in UX/UI Design and User Experience."
+            ]
         },
         {
             "job_title": "Network Administrator",
-            "skills_required": ["Network Troubleshooting", "Windows Server", "LAN/WAN", "Security"]
+            "patterns": [
+                "Recommend job roles for Network Administrators with skills in Network Troubleshooting, Windows Server, LAN/WAN, and Security",
+                "Network Administrator positions with expertise in Network Troubleshooting, Windows Server, LAN/WAN, and Security",
+                "Tell me about Network Administrator careers for those skilled in Network Troubleshooting, Windows Server, LAN/WAN, and Security",
+                "I have worked in Network Troubleshooting, Windows Server, LAN/WAN, and Security"
+            ],
+            "responses": [
+                "You should explore opportunities in Network Administration and IT Support roles.",
+                "Consider looking into Network Administrator positions.",
+                "Network Administration roles might be a great fit for you.",
+                "Check out careers in Network Administration and IT Support."
+            ]
         },
         {
             "job_title": "Content Writer",
-            "skills_required": ["Writing", "Editing", "SEO", "Content Creation"]
+            "patterns": [
+                "What job opportunities are there for Content Writers with skills in Writing, Editing, SEO, and Content Creation",
+                "Content Writer careers with expertise in Writing, Editing, SEO, and Content Creation",
+                "Tell me about Content Writer job prospects for those skilled in Writing, Editing, SEO, and Content Creation",
+                "I have worked in Writing, Editing, SEO, and Content Creation"
+            ],
+            "responses": [
+                "You should explore opportunities in Content Writing and Copywriting roles.",
+                "Consider looking into Content Writer positions.",
+                "Content Writing roles might be a great fit for you.",
+                "Check out careers in Content Writing and Copywriting."
+            ]
         },
         {
             "job_title": "Financial Analyst",
-            "skills_required": ["Financial Modeling", "Data Analysis", "Excel", "Finance"]
+            "patterns": [
+                "Jobs for Financial Analysts with skills in Financial Modeling, Data Analysis, Excel, and Finance",
+                "Financial Analyst career options with expertise in Financial Modeling, Data Analysis, Excel, and Finance",
+                "What job matches skills in Data Analysis, Finance, Excel, and Financial Modeling",
+                "I have worked in Financial Modeling, Data Analysis, Excel, and Finance"
+            ],
+            "responses": [
+                "You should explore opportunities in Financial Analysis and Investment roles.",
+                "Consider looking into Financial Analyst positions.",
+                "Financial Analysis roles might be a great fit for you.",
+                "Check out careers in Financial Analysis and Investment."
+            ]
         }
     ]
 }

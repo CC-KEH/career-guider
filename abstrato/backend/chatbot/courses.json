@@ -6,6 +6,12 @@
                 "Full Stack Web Development on Udemy",
                 "Python for Data Science on Coursera",
                 "JavaScript Fundamentals on edX"
+            ],
+            "patterns": [
+                "Which courses are best for Software Developers?",
+                "Recommend courses for Software Developer career",
+                "How to become a Software Developer?",
+                "Software Developer training"
             ]
         },
         {
@@ -14,6 +20,12 @@
                 "Data Analysis and Visualization with Python on Coursera",
                 "Excel for Data Analysis on LinkedIn Learning",
                 "SQL for Data Science on edX"
+            ],
+            "patterns": [
+                "Can you suggest courses for Data Analysts?",
+                "Data Analyst training programs",
+                "How to become a Data Analyst?",
+                "Courses for Data Analyst positions"
             ]
         },
         {
@@ -22,6 +34,12 @@
                 "Graphic Design Specialization on Coursera",
                 "Adobe Photoshop CC - Essentials Training Course on Udemy",
                 "User Experience Design Fundamentals on edX"
+            ],
+            "patterns": [
+                "What courses are good for Graphic Designers?",
+                "Graphic Designer course recommendations",
+                "Graphic Design training programs",
+                "How to become a Graphic Designer?"
             ]
         },
         {
@@ -30,6 +48,12 @@
                 "Cisco CCNA 200-301 - The Complete Guide on Udemy",
                 "Network Security Fundamentals on Coursera",
                 "CCNP Enterprise - Advanced Routing on LinkedIn Learning"
+            ],
+            "patterns": [
+                "Which courses are recommended for Network Engineers?",
+                "Network Engineer training",
+                "Courses for Network Engineer positions",
+                "How to become a Network Engineer?"
             ]
         },
         {
@@ -38,6 +62,12 @@
                 "Digital Marketing Specialization on Coursera",
                 "Social Media Marketing Specialization on Coursera",
                 "Marketing Analytics on edX"
+            ],
+            "patterns": [
+                "Suggest courses for Marketing Managers",
+                "Marketing Manager course recommendations",
+                "Marketing Manager training programs",
+                "How to become a Marketing Manager?"
             ]
         },
         {
@@ -46,6 +76,12 @@
                 "Machine Learning on Coursera",
                 "Data Science Specialization on edX",
                 "Deep Learning Specialization on Coursera"
+            ],
+            "patterns": [
+                "Courses for Data Scientists",
+                "Data Scientist training programs",
+                "What should I study for a Data Scientist career?",
+                "How to become a Data Scientist?"
             ]
         },
         {
@@ -54,6 +90,12 @@
                 "User Experience Design on Udemy",
                 "UX Design Fundamentals on Coursera",
                 "Interaction Design Specialization on Coursera"
+            ],
+            "patterns": [
+                "What courses should I take as a UX Designer?",
+                "UX Designer training programs",
+                "UX Design career development",
+                "How to become a UX Designer?"
             ]
         },
         {
@@ -62,6 +104,12 @@
                 "Network Administration Fundamentals on edX",
                 "Cisco CCNP Routing and Switching on Udemy",
                 "Network Troubleshooting and Security on LinkedIn Learning"
+            ],
+            "patterns": [
+                "Courses for Network Administrators",
+                "Network Administrator training",
+                "Training programs for Network Administrators",
+                "How to become a Network Administrator?"
             ]
         },
         {
@@ -70,6 +118,12 @@
                 "Writing for the Web on Coursera",
                 "Content Marketing Fundamentals on LinkedIn Learning",
                 "Professional Writing on edX"
+            ],
+            "patterns": [
+                "Suggest courses for Content Writers",
+                "Content Writer training programs",
+                "Content Writing career development",
+                "How to become a Content Writer?"
             ]
         },
         {
@@ -78,6 +132,12 @@
                 "Financial Modeling on Coursera",
                 "Financial Analysis on edX",
                 "Investment Analysis and Portfolio Management on edX"
+            ],
+            "patterns": [
+                "Courses for Financial Analysts",
+                "Financial Analyst training programs",
+                "What should I study for a Financial Analyst career?",
+                "How to become a Financial Analyst?"
             ]
         }
     ]

@@ -1,3 +1,5 @@
+#TODO: Fix the course data
+ 
 import random
 import json
 import torch
@@ -55,14 +57,14 @@ while True:
         if tag in [job["job_title"] for job in jobs_data["jobs"]]:
             # Handle job-related response
             for job in jobs_data["jobs"]:
-                if job["job_title"] == tag:
+                if tag == job["job_title"]:
                     print(f"{bot_name}: {random.choice(job['responses'])}")
                     print("\n")
                     
         elif tag in [course["job_title"] for course in courses_data["job_courses"]]:
             # Handle course-related response
             for course in courses_data["job_courses"]:
-                if course["job_title"] == tag:
+                if tag == course["job_title"]:
                     print(f"{bot_name}: {random.choice(course['responses'])}")
                     print("\n")
                     
