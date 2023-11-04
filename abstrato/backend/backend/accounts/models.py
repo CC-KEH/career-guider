@@ -2,12 +2,6 @@ from django.db import models
 from django.contrib.auth.base_user import BaseUserManager
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
 
-# {
-#       "email":"test@example.com",
-#       "username":"tester",
-#       "password": "testing123"
-# }
-
 class AppUserManager(BaseUserManager):
 	def create_user(self, email, password=None):
 		if not email:
@@ -39,3 +33,16 @@ class AppUser(AbstractBaseUser, PermissionsMixin):
 	objects = AppUserManager()
 	def __str__(self):
 		return self.username
+
+
+class UserProfile(models.Model):
+    skill1 = models.CharField(max_length=50)
+    skill2 = models.CharField(max_length=50)
+    skill3 = models.CharField(max_length=50)
+    experience = models.CharField(max_length=50)
+    interests = models.CharField(max_length=50)
+    goals = models.CharField(max_length=50)
+    
+    def __str__(self):
+        return f"{self.skill1} {self.skill2} {self.skill3} {self.experience} {self.interests} {self.goals}"
+

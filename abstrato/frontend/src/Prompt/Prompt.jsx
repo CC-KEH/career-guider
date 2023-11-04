@@ -2,47 +2,32 @@ import React from 'react'
 import background from '../images/background4.png'
 import { useState } from 'react';
 import styles from './Prompt.module.css';
-import { Navigate, useNavigate } from 'react-router-dom'
+import Axios from 'axios';
+import { Navigate,useNavigate } from 'react-router-dom';
 
 const Prompt=()=> {
-
-  const initialFormData = {
-    section1: {
-      name: "",
-      email: "",
-      phone: "",
-      experience: "",
-    },
-    section2: {
-      skills: "",
-      certifications: "",
-      education: "",
-      achievements: "",
-    },
-    section3: {
-      dreamJob: "",
-      techInterest: "",
-      resources: "",
-      idealCompany: "",
-    },
-  };
-
+const [navigate, setNavigate] = useState(false);
 const [section, setSection] = useState(0);
 const [isFadingOut, setIsFadingOut] = useState(false);
-
-const [currentJobTitle, setCurrentJobTitle] = useState('');
-const [jobTitleDuration, setJobTitleDuration] = useState('');
-const [educationBackground, setEducationBackground] = useState('');
-const [technicalSkills, setTechnicalSkills] = useState('');
-const [favoriteTools, setFavoriteTools] = useState('');
-
-const [currentJobChallenges, setCurrentJobChallenges] = useState('');
-const [projectInterests, setProjectInterests] = useState('');
-const [longTermGoals, setLongTermGoals] = useState('');
-const [techAreasToLearn, setTechAreasToLearn] = useState('');
+const [skills, setSkills] = useState('');
+const [certifications, setCertifications] = useState('');
+const [education, setEducation] = useState('');
+const [resources, setResources] = useState('');
+const [techInterest, setTechInterest] = useState('');
 const [dreamJob, setDreamJob] = useState('');
+const [idealCompany, setIdealCompany] = useState('');
 
-const [coursesResources, setCoursesResources] = useState('');
+const sendFormDataToDjango = async (formData) => {
+  try {
+    const response = await Axios.post('http://127.0.0.1:8000/accounts/get-data', formData);
+    console.log('Data sent successfully:', response.data);
+    const { roadmap, summary } = response.data;
+    navigate('/HomeScreen', { roadmap, summary});
+  } catch (error) {
+    console.error('Error sending data:', error);
+  }
+};
+
 
 
 const handleNextSection = () => {
@@ -64,8 +49,17 @@ const handleNextSection = () => {
   };
 
 const handleSubmit = (event) => {
-    event.preventDefault();  
-    navigate('/Courses');
+    event.preventDefault();
+    const formData = {
+      skills: skills,
+      certifications: certifications,
+      education: education,
+      resources: resources,
+      techInterest: techInterest,
+      dreamJob: dreamJob,
+      idealCompany: idealCompany,
+    };
+    sendFormDataToDjango(formData);
   };
 
 const renderSectionLinks = () => {
@@ -75,7 +69,6 @@ const renderSectionLinks = () => {
         <span className={section === 0 ? 'active' : ''} onClick={() => setSection(0)}>Section 0</span>
         <span className={section === 1 ? 'active' : ''} onClick={() => setSection(1)}>Section 1</span>
         <span className={section === 2 ? 'active' : ''} onClick={() => setSection(2)}>Section 2</span>
-        <span className={section === 3 ? 'active' : ''} onClick={() => setSection(3)}>Section 3</span>
       </div>
     );
   };
@@ -136,55 +129,44 @@ const renderSectionLinks = () => {
     {section === 1 && (
           <div className={isFadingOut ? styles.fadeOut : styles.fadeIn}>
           <div className="space-y-6 py-8 text-base leading-7 text-gray-600">
-            <p className="font-bold text-xl ml-1">Current Position and Skills</p>
-            <p className="ml-1">What is your current job title?</p>
-            <input className={styles.input} type="text" value={currentJobTitle} onChange={(e) => setCurrentJobTitle(e.target.value)} />
-            <p className="ml-1">How long have you been in this role?</p>
-            <input className={styles.input} type="text" value={jobTitleDuration} onChange={(e) => setJobTitleDuration(e.target.value)} />
-            <p className="ml-1">What is your educational background?</p>
-            <input className={styles.input} type="text" value={educationBackground} onChange={(e) => setEducationBackground(e.target.value)} />
-            <p className="ml-1">What programming languages or technical skills are you proficient in?</p>
-            <input className={styles.input} type="text" value={technicalSkills} onChange={(e) => setTechnicalSkills(e.target.value)} />
-            <p className="ml-1">What are your favorite technology tools or platforms that you use regularly?</p>
-            <input className={styles.input} type="text" value={favoriteTools} onChange={(e) => setFavoriteTools(e.target.value)} />
-            <div className={styles.card_links}>
-            {section > 0 ? <span onClick={() => handlePreviousSection(section - 1)}>Previous Section</span> : null}
-            {section < 2 ? <span onClick={() => handleNextSection(section + 1)}>Next Section</span> : null}
-            </div>
-          </div>
-          </div>
-        )}
-    {section === 2 && (
-          <div className={isFadingOut ? styles.fadeOut : styles.fadeIn}>
-          <div className="space-y-6 py-8 text-base leading-7 text-gray-600">
             <p className="font-bold text-xl">Career Goals and Aspirations</p>
-            <p className="ml-1">What are some of the biggest challenges you face in your current job?</p>
-            <input className={styles.input} type="text" value={currentJobChallenges} onChange={(e) => setCurrentJobChallenges(e.target.value)} />
-            <p className="ml-1">What kind of projects are you interested in working on, and what motivates you about them?</p>
-            <input className={styles.input} type="text" value={projectInterests} onChange={(e) => setProjectInterests(e.target.value)} />
-            <p className="ml-1">What are your long-term career goals in the tech industry, and what steps are you taking to achieve them?</p>
-            <input className={styles.input} type="text" value={longTermGoals} onChange={(e) => setLongTermGoals(e.target.value)} />
-            <p className="ml-1">Are there any specific areas of technology that you would like to learn more about?</p>
-            <input className={styles.input} type="text" value={techAreasToLearn} onChange={(e) => setTechAreasToLearn(e.target.value)} />
-            <p className="ml-1">What kind of job or company would be your dream position in the tech industry?</p>            
-              <input className={styles.input} type="text" value={dreamJob} onChange={(e) => setDreamJob(e.target.value)} />
-              <div className={styles.card_links}>
+            <p className="ml-1">Let's start with your current skills.</p>
+            <input className={styles.input} type="text" value={skills} onChange={(e) => setSkills(e.target.value)} />
+
+            <p className="ml-1">Do you have any certifications, If yes then please link them down.</p>
+            <input className={styles.input} type="text" value={certifications} onChange={(e) => setCertifications(e.target.value)} />
+            
+            <p className="ml-1">Tell us about your education background.</p>
+            <input className={styles.input} type="text" value={education} onChange={(e) => setEducation(e.target.value)} />
+            
+            <p className="ml-1">Ever taken any online course? If yes please link them down.</p>
+            <input className={styles.input} type="text" value={resources} onChange={(e) => setResources(e.target.value)} />
+            
+            <div className={styles.card_links}>
                 {section > 0 ? <span onClick={() => handlePreviousSection(section - 1)}>Previous Section</span> : null}
-                {section < 3 ? <span onClick={() => handleNextSection(section + 1)}>Next Section</span> : null}
+                {section < 2 ? <span onClick={() => handleNextSection(section + 1)}>Next Section</span> : null}
               </div>
           </div>
           </div>
         )}
-          {section === 3 && (
+          {section === 2 && (
               <div className={isFadingOut ? styles.fadeOut : styles.fadeIn}>
               <div className="space-y-6 py-8 text-base leading-7 text-gray-600">
-                  <p className="font-bold text-xl ml-0.5">Your prevous courses and resources</p>
-                  <p className="ml-0.5 text-xm">What kind of courses or resources have you used in the past to improve your technical skills?</p>
-                  <input className={styles.input} type="text" value={coursesResources} onChange={(e) => setCoursesResources(e.target.value)} />
+                  <p className="font-bold text-xl ml-0.5">Lets talk about you future now</p>
+                  
+                  <p className="ml-0.5 text-xm">List down some skills you want learn.</p>
+                  <input className={styles.input} type="text" value={techInterest} onChange={(e) => setTechInterest(e.target.value)} />
+                  
+                  <p className="ml-1">What kind of job or company would be your dream position in the tech industry?</p>            
+                  <input className={styles.input} type="text" value={dreamJob} onChange={(e) => setDreamJob(e.target.value)} />
+
+                  <p className="ml-1">What kind of company would be your dream position in the tech industry?</p>
+                  <input className={styles.input} type="text" value={idealCompany} onChange={(e) => setIdealCompany(e.target.value)} />
+
                   <div className={styles.card_links}>
                      {section > 0 ? <span onClick={() => handlePreviousSection(section - 1)}>Previous Section</span> : null}
                  </div>
-                    <button className={styles.button} disabled={!coursesResources} onClick={() => {handleSubmit}}>Submit</button>                  
+                    <button className={styles.button} onClick= {handleSubmit}>Submit</button>                  
               </div>
               </div>
           )}

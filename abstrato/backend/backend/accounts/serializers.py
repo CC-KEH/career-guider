@@ -2,7 +2,7 @@ from rest_framework import serializers
 from django.contrib.auth import get_user_model, authenticate
 from rest_framework.exceptions import ValidationError
 UserModel = get_user_model()
-
+from .models import UserProfile
 class UserRegisterSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = UserModel
@@ -27,3 +27,11 @@ class UserSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = UserModel
 		fields = ('email', 'username')
+
+
+class UserProfileSerializer(serializers.ModelSerializer):
+    # This is the serializer that will be used to add more data about user, like skills, interests, experience and goals.
+	class Meta:
+		model = UserProfile
+		fields = '__all__'
+

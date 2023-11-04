@@ -9,6 +9,15 @@ function Navbar() {
 		  console.log(error)
 		}
 	}
+	function submitLogout(e) {
+		e.preventDefault();
+		client.post(
+		  "/api/logout",
+		  {withCredentials: true}
+		).then(function(res) {
+		  setCurrentUser(false);
+		});
+	  }
   const handleRefresh = () => {
 		window.location.reload();
 	  };

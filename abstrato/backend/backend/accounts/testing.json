@@ -1,0 +1,18 @@
+[{
+    "skill1": "Your Skill 1 Data",
+    "skill2": "Your Skill 2 Data",
+    "skill3": "Your Skill 3 Data",
+    "experience": "Your Experience Data",
+    "interests": "Your Interests Data",
+    "goals": "Your Goals Data"
+  },
+ {
+       "email":"test@example.com",
+       "username":"tester",
+       "password": "testing123"
+ },
+ {
+     "email":"tester@example.com",
+     "password":"tester"
+ }
+]

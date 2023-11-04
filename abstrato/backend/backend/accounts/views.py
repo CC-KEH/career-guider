@@ -3,10 +3,16 @@ from django.contrib.auth import get_user_model, login, logout
 from rest_framework.authentication import SessionAuthentication
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .serializers import UserRegisterSerializer, UserLoginSerializer, UserSerializer
+from .serializers import UserRegisterSerializer, UserLoginSerializer, UserSerializer,UserProfileSerializer
 from rest_framework import permissions, status
 from .validations import custom_validation, validate_email, validate_password
-
+from django.http import HttpResponse,JsonResponse
+from .models import UserProfile
+# from .bard import Ai
+from rest_framework import status
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import AllowAny
+import time
 
 class UserRegister(APIView):
 	permission_classes = (permissions.AllowAny,)
@@ -50,3 +56,37 @@ class UserView(APIView):
 	def get(self, request):
 		serializer = UserSerializer(request.user)
 		return Response({'user': serializer.data}, status=status.HTTP_200_OK)
+
+
+# def UserView(request):
+# 	# Get all the users
+# 	users = UserProfile.objects.all()
+# 	# Serialize the data
+# 	serializer = UserProfileSerializer(users, many=True)
+# 	# Return Json Response
+# 	return JsonResponse(serializer.data, safe=False)
+
+
+@api_view(['GET', 'POST'])
+@permission_classes([AllowAny]) 
+def UserProfileView(request):
+    if request.method == 'GET':
+        users = UserProfile.objects.all()
+        serializer = UserProfileSerializer(users, many=True)
+        return JsonResponse(serializer.data, safe=False)
+    elif request.method == 'POST':
+        serializer = UserProfileSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            # bard = Ai()
+            # roadmap = bard.bard(question="Give the roadmap for this scenario " + serializer.data)
+            time.sleep(5)
+            roadmap = "This is the roadmap for this scenario"
+            # summary = bard.bard(question="Give the summary about this user" + serializer.data)
+            summary = "This is the summary of this user"
+            response_data = {
+            "roadmap": roadmap,
+            "summary": summary,
+        	}
+            return JsonResponse(response_data)
+        return JsonResponse({"error": "Invalid request"})

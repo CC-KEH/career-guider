@@ -1,5 +1,5 @@
 #TODO: Fix the course data
- 
+
 import random
 import json
 import torch
