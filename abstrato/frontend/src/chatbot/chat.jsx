@@ -12,7 +12,6 @@ const theme = {
   botFontColor: '#fff',
   userBubbleColor: '#9E88F9 ',
   userFontColor: '#fff',
-
 };
 
 class Review extends Component {

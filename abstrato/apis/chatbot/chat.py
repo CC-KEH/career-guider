@@ -37,43 +37,34 @@ bot_name = "Vidit"
 
 print("Let's get started! Type 'quit' to exit.\n")
 
-while True:
-    sentence = input('You: ')
-    if sentence == "quit":
-        break
-    sentence = tokenize(sentence)
+def get_response(msg):
+    sentence = tokenize(msg)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
-    X = torch.from_numpy(X)
+    X = torch.from_numpy(X).to(device)
+
     output = model(X)
     _, predicted = torch.max(output, dim=1)
+
     tag = tags[predicted.item()]
 
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
+    if prob.item() > 0.75:
+        for intent in intents['intents']:
+            if tag == intent["tag"]:
+                return random.choice(intent['responses'])
+    
+    return "I do not understand..."
 
-    if prob.item() > 0.70:
-        # Check if the tag corresponds to a job or course intent
-        if tag in [job["job_title"] for job in jobs_data["jobs"]]:
-            # Handle job-related response
-            for job in jobs_data["jobs"]:
-                if tag == job["job_title"]:
-                    print(f"{bot_name}: {random.choice(job['responses'])}")
-                    print("\n")
-                    
-        elif tag in [course["job_title"] for course in courses_data["job_courses"]]:
-            # Handle course-related response
-            for course in courses_data["job_courses"]:
-                if tag == course["job_title"]:
-                    print(f"{bot_name}: {random.choice(course['responses'])}")
-                    print("\n")
-                    
-        else:
-            # Handle intents defined in 'intents.json'
-            for intent in intents["intents"]:
-                if tag == intent["tag"]:
-                    print(f"{bot_name}: {random.choice(intent['responses'])}")
-                    print("\n")
-    else:
-        print(f"{bot_name}: Sorry, I am dumb, I don't understand what you said")
-        print("\n")
+
+if __name__ == "__main__":
+    print("Let's chat! (type 'quit' to exit)")
+    while True:
+        # sentence = "do you use credit cards?"
+        sentence = input("You: ")
+        if sentence == "quit":
+            break
+
+        resp = get_response(sentence)
+        print(resp)
