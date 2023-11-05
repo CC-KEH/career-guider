@@ -2,21 +2,12 @@ import React, { useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import Input from '../../components/otherComponents/Input/Input';
 import styles from './Login.module.css';
-import axios from "axios";
-
-axios.defaults.xsrfCookieName = 'csrftoken';
-axios.defaults.xsrfHeaderName = 'X-CSRFToken';
-axios.defaults.withCredentials = true;
-const client = axios.create({
-  baseURL: "http://127.0.0.1:8000"
-});
-  
 function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [passwd, setPasswd] = useState('');
   const [isMouseOver, setMouseOver] = useState(false);
-
+  const [user, setCurrentUser] = useState(false);
   function handleMouseOver() {
     setMouseOver(true);
   }
@@ -36,7 +27,9 @@ function Login() {
     ).then(function(res) {
       setCurrentUser(true);
     });
-    navigate('/HomeScreen');
+    if(user) {
+      navigate("/homeScreen");
+    }
   }
 
   return (

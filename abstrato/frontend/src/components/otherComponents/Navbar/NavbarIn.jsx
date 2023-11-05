@@ -49,7 +49,7 @@ function NavbarIn() {
             </li>
           </ul>
           <span className={navText}>
-            <Link to="/" className={`${styles.navbtn} ${navbtnstyle}`}>Logout</Link>
+            <Link to="/" onClick={handlelogout} className={`${styles.navbtn} ${navbtnstyle}`}>Logout</Link>
           </span>
         </div>
       </div>

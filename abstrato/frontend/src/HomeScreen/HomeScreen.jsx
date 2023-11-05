@@ -4,19 +4,15 @@ import hiresvg from "../assets/resumebuilder_images/hire.svg";
 import Navbar from "../components/Navbar/Navbar";
 import ProgressBar from "./ProgressBar";
 import Footer from "../components/Footer/Footer";
-function HomeScreen(props) {
-  const roadmap = props.roadmap || '';
-  const summary = props.summary || '';
-
-
+function HomeScreen() {
   return (
     <>
-      <Navbar />
+      <Navbar client/>
       <div className="bg-gradient-to-br from-blue-100 to-white py-10">
         <div className="h-3/4 mb-36">
           <div className="container mx-auto space-x-3 pt-4">
             {/* Add user details here, e.g., profile picture, name, etc. */}
-          </div>
+          </div>.........................................kk   
 
           <div className={styles.header_container}>
             <div className={styles.left}>
