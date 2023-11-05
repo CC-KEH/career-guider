@@ -1,26 +1,17 @@
 import React from 'react'
-import { Navigate, useNavigate,Link } from 'react-router-dom'
-import { useState } from 'react';
+import { useNavigate,Link } from 'react-router-dom'
+import {account } from '../../appwrite/appwriteConfig';
 
-
-function Navbar(props) {
-
-	const [currentUser, setCurrentUser] = useState(true);
-	function submitLogout(e) {
-		e.preventDefault();
-		props.client.post(
-		  "/api/logout",
-		  {withCredentials: true}
-		).then(function(res) {
-		  setCurrentUser(false);
-		});
-		if (!currentUser) {
-		  return <Navigate to="/" />;
-	  }
+function Navbar() {
+	const navigate = useNavigate();
+	const submitLogout = () => {
+		account.deleteSession('current');
+		navigate('/');	
 	}
-  const handleRefresh = () => {
+	const handleRefresh = () => {
 		window.location.reload();
-	  };
+	};
+
   return (
     <div className="bg-white w-full h-20 mb-10 shadow-md px-4 md:px-0 fixed z-10 container-fluid">
 		<div className="flex container mx-auto justify-between items-center h-full">
@@ -29,7 +20,6 @@ function Navbar(props) {
 				<Link to="/Jobs" className="hidden sm:flex font-bold text-xl text-gray-800 border-b-4 border-green-700 pb-2 px-3 items-center h-5/6">Jobs</Link>
 				<Link to="/Courses" className="hidden md:flex text-xl text-gray-500 border-b-4 border-transparent hover:border-gray-200 pb-2 px-3 items-center h-5/6 ">Courses</Link>
 				<Link to="/Connect" className="hidden md:flex text-xl text-gray-500 border-b-4 border-transparent hover:border-gray-200 pb-2 px-3 items-center h-5/6">Connect</Link>
-				<Link to="/Community" className="hidden md:flex text-xl text-gray-500 border-b-4 border-transparent hover:border-gray-200 pb-2 px-3 items-center h-5/6">Community</Link>
 				<Link to="/ResumeBuilder" className="hidden md:flex text-xl text-gray-500 border-b-4 border-transparent hover:border-gray-200 pb-2 px-3 items-center h-5/6">Build Resume</Link>
 				<Link to="/HomeScreen" className="hidden md:flex text-xl text-gray-500 border-b-4 border-transparent hover:border-gray-200 pb-2 px-3 items-center h-5/6">Profile</Link> 	
 				<Link to="/" onClick={submitLogout} className="hidden md:flex text-xl text-gray-500 border-b-4 border-transparent hover:border-gray-200 pb-2 px-3 items-center h-5/6">Logout</Link> 	

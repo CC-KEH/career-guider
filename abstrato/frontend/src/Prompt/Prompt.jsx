@@ -2,11 +2,10 @@ import React from 'react'
 import background from '../images/background4.png'
 import { useState } from 'react';
 import styles from './Prompt.module.css';
-import Axios from 'axios';
-import { Navigate,useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Prompt=()=> {
-const [navigate, setNavigate] = useState(false);
+const navigate = useNavigate();
 const [section, setSection] = useState(0);
 const [isFadingOut, setIsFadingOut] = useState(false);
 const [skills, setSkills] = useState('');

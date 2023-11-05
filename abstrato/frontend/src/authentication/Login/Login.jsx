@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import {useNavigate } from 'react-router-dom';
 import Input from '../../components/otherComponents/Input/Input';
 import styles from './Login.module.css';
+import { account } from '../../appwrite/appwriteConfig';
+
 function Login() {
   const navigate = useNavigate();
-  const [email, setEmail] = useState('');
-  const [passwd, setPasswd] = useState('');
   const [isMouseOver, setMouseOver] = useState(false);
-  const [user, setCurrentUser] = useState(false);
+  const [user, setUser] = useState({
+    email: '',
+    password: ''
+  });
+
   function handleMouseOver() {
     setMouseOver(true);
   }
@@ -16,19 +20,13 @@ function Login() {
     setMouseOver(false);
   }
 
-  function loginUser(e) {
+  const loginUser = async(e) => {
     e.preventDefault();
-    client.post(
-      "/accounts/login",
-      {
-        email: email,
-        password: passwd
-      }
-    ).then(function(res) {
-      setCurrentUser(true);
-    });
-    if(user) {
-      navigate("/homeScreen");
+    try {
+      await account.createEmailSession(user.email,user.password);
+      navigate('/homeScreen')
+    } catch (error) {
+      console.log(error)
     }
   }
 
@@ -39,14 +37,14 @@ function Login() {
           <h1>Welcome back</h1>
 
           <Input
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setUser({...user,email: e.target.value})}
             type="text"
             placeholder="Email"
           />
           <Input
             type="password"
             placeholder="Password"
-            onChange={(e) => setPasswd(e.target.value)}
+            onChange={(e) => setUser({...user,password: e.target.value})}
           />
 
           <button

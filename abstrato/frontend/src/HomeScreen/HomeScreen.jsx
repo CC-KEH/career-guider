@@ -7,12 +7,12 @@ import Footer from "../components/Footer/Footer";
 function HomeScreen() {
   return (
     <>
-      <Navbar client/>
+      <Navbar/>
       <div className="bg-gradient-to-br from-blue-100 to-white py-10">
         <div className="h-3/4 mb-36">
           <div className="container mx-auto space-x-3 pt-4">
             {/* Add user details here, e.g., profile picture, name, etc. */}
-          </div>.........................................kk   
+          </div>.........................................   
 
           <div className={styles.header_container}>
             <div className={styles.left}>
@@ -59,14 +59,34 @@ function HomeScreen() {
             {/* Add user roadmap component */}
             <div className="bg-white p-10 rounded-lg shadow mb-6 w-2/4 h-[65.5rem] ml-20">
               <h2 className="text-4xl font-bold mb-4">Roadmap</h2>
-              {roadmap}
+              - learn python
+              <br />
+              - learn html
+              <br />
+              - learn css
+              <br />
+              - learn javascript
+              <br />
+              - learn react
+              <br />
+              - learn django
+              <br />
+              - learn sql
+              <br />
+
             </div>
 
             <div className="flex flex-col w-1/3 mx-20">
               {/* Add user summary component */}
               <div className="bg-white p-10 rounded-lg shadow mb-6 w-full h-[32rem]">
                 <h2 className="text-4xl font-bold mb-4">Summary</h2>
-                {summary}
+                - completed 3 courses
+                <br />
+                - completed 2 projects
+                <br />
+                - completed 1 certification
+                <br />
+                
               </div>
 
               {/* Add user certification component */}
