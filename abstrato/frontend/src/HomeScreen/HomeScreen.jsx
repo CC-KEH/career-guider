@@ -4,6 +4,7 @@ import hiresvg from "../assets/resumebuilder_images/hire.svg";
 import Navbar from "../components/Navbar/Navbar";
 import ProgressBar from "./ProgressBar";
 import Footer from "../components/Footer/Footer";
+import Chatbox from "../chatbot/Chatbox";
 function HomeScreen() {
   return (
     <>
@@ -98,6 +99,7 @@ function HomeScreen() {
           </div>
         </div>
       </div>
+      <Chatbox/>
       <Footer/>
     </>
   );

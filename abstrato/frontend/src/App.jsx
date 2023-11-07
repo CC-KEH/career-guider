@@ -10,6 +10,7 @@ import Login from "./authentication/Login/Login";
 import TemplateScreen from "./ResumeBuilder/TemplateScreen";
 import HomeScreen from "./HomeScreen/HomeScreen";
 import { Welcome } from "./Welcome/Welcome";
+import Chatbox from "./chatbot/Chatbox";
 
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/courses" element={<CourseScreen />} />
         <Route path="/connect" element={<Connect />} />
         <Route path="/homeScreen" element={<HomeScreen />} />
+        <Route path="/chatbot" element={<Chatbox />} />
       </Routes>
     </BrowserRouter>
   );
