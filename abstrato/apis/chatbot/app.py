@@ -11,7 +11,7 @@ def predict():
     message = data.get('message')
     response = get_response(message)
     print(response)
-    return jsonify({"response": response})
+    return jsonify({"message": response})
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)

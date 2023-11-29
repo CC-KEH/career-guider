@@ -40,13 +40,13 @@ for job_entry in jobs_data['jobs']:
         xy.append((w, job_title))
 
 # Extract jobs-to-courses mapping data
-for job_entry in courses_data['job_courses']:
-    job_title = job_entry['job_title']
-    tags.append(job_title)  # Add job titles as tags
-    for pattern in job_entry['patterns']:
+for course_entry in courses_data['job_courses']:
+    course_title = course_entry['course_title']
+    tags.append(course_title)  # Add job titles as tags
+    for pattern in course_entry['patterns']:
         w = tokenize(pattern)
         all_words.extend(w)
-        xy.append((w, job_title))
+        xy.append((w, course_title))
 
 # Remove duplicates and ignore characters
 ignore = ['?', '.', ',', '!', "'"]

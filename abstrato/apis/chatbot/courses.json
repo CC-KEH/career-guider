@@ -1,11 +1,11 @@
 {
     "job_courses": [
         {
-            "job_title": "Software Developer",
+            "course_title": "Software Developer Course",
             "recommended_courses": [
-                "Full Stack Web Development on Udemy",
-                "Python for Data Science on Coursera",
-                "JavaScript Fundamentals on edX"
+                "Checkout Full Stack Web Development on Udemy",
+                "Checkout Devops on Coursera",
+                "Checkout JavaScript Fundamentals on edX"
             ],
             "patterns": [
                 "Which courses are best for Software Developers?",
@@ -15,11 +15,11 @@
             ]
         },
         {
-            "job_title": "Data Analyst",
+            "course_title": "Data Analyst Course",
             "recommended_courses": [
-                "Data Analysis and Visualization with Python on Coursera",
-                "Excel for Data Analysis on LinkedIn Learning",
-                "SQL for Data Science on edX"
+                "Checkout Data Analysis and Visualization with Python on Coursera",
+                "Checkout Excel for Data Analysis on LinkedIn Learning",
+                "Checkout SQL for Data Science on edX"
             ],
             "patterns": [
                 "Can you suggest courses for Data Analysts?",
@@ -29,11 +29,11 @@
             ]
         },
         {
-            "job_title": "Graphic Designer",
+            "course_title": "Graphic Designer Course",
             "recommended_courses": [
-                "Graphic Design Specialization on Coursera",
-                "Adobe Photoshop CC - Essentials Training Course on Udemy",
-                "User Experience Design Fundamentals on edX"
+                "Checkout Graphic Design Specialization on Coursera",
+                "Checkout Adobe Photoshop CC - Essentials Training Course on Udemy",
+                "Checkout User Experience Design Fundamentals on edX"
             ],
             "patterns": [
                 "What courses are good for Graphic Designers?",
@@ -43,11 +43,11 @@
             ]
         },
         {
-            "job_title": "Network Engineer",
+            "course_title": "Network Engineer Course",
             "recommended_courses": [
-                "Cisco CCNA 200-301 - The Complete Guide on Udemy",
-                "Network Security Fundamentals on Coursera",
-                "CCNP Enterprise - Advanced Routing on LinkedIn Learning"
+                "Checkout Cisco CCNA 200-301 - The Complete Guide on Udemy",
+                "Checkout Network Security Fundamentals on Coursera",
+                "Checkout CCNP Enterprise - Advanced Routing on LinkedIn Learning"
             ],
             "patterns": [
                 "Which courses are recommended for Network Engineers?",
@@ -57,11 +57,11 @@
             ]
         },
         {
-            "job_title": "Marketing Manager",
+            "course_title": "Marketing Manager Course",
             "recommended_courses": [
-                "Digital Marketing Specialization on Coursera",
-                "Social Media Marketing Specialization on Coursera",
-                "Marketing Analytics on edX"
+                "Checkout Digital Marketing Specialization on Coursera",
+                "Checkout Social Media Marketing Specialization on Coursera",
+                "Checkout Marketing Analytics on edX"
             ],
             "patterns": [
                 "Suggest courses for Marketing Managers",
@@ -71,11 +71,11 @@
             ]
         },
         {
-            "job_title": "Data Scientist",
+            "course_title": "Data Scientist Course",
             "recommended_courses": [
-                "Machine Learning on Coursera",
-                "Data Science Specialization on edX",
-                "Deep Learning Specialization on Coursera"
+                "Checkout Machine Learning on Coursera",
+                "Checkout Data Science Specialization on edX",
+                "Checkout Deep Learning Specialization on Coursera"
             ],
             "patterns": [
                 "Courses for Data Scientists",
@@ -85,11 +85,11 @@
             ]
         },
         {
-            "job_title": "UX Designer",
+            "course_title": "UX Designer Course",
             "recommended_courses": [
-                "User Experience Design on Udemy",
-                "UX Design Fundamentals on Coursera",
-                "Interaction Design Specialization on Coursera"
+                "Checkout User Experience Design on Udemy",
+                "Checkout UX Design Fundamentals on Coursera",
+                "Checkout Interaction Design Specialization on Coursera"
             ],
             "patterns": [
                 "What courses should I take as a UX Designer?",
@@ -99,11 +99,11 @@
             ]
         },
         {
-            "job_title": "Network Administrator",
+            "course_title": "Network Administrator Course",
             "recommended_courses": [
-                "Network Administration Fundamentals on edX",
-                "Cisco CCNP Routing and Switching on Udemy",
-                "Network Troubleshooting and Security on LinkedIn Learning"
+                "Checkout Network Administration Fundamentals on edX",
+                "Checkout Cisco CCNP Routing and Switchiwng on Udemy",
+                "Checkout Network Troubleshooting and Security on LinkedIn Learning"
             ],
             "patterns": [
                 "Courses for Network Administrators",
@@ -113,11 +113,11 @@
             ]
         },
         {
-            "job_title": "Content Writer",
+            "course_title": "Content Writer Course",
             "recommended_courses": [
-                "Writing for the Web on Coursera",
-                "Content Marketing Fundamentals on LinkedIn Learning",
-                "Professional Writing on edX"
+                "Checkout Writing for the Web on Coursera",
+                "Checkout Content Marketing Fundamentals on LinkedIn Learning",
+                "Checkout Professional Writing on edX"
             ],
             "patterns": [
                 "Suggest courses for Content Writers",
@@ -127,11 +127,11 @@
             ]
         },
         {
-            "job_title": "Financial Analyst",
+            "course_title": "Financial Analyst Course",
             "recommended_courses": [
-                "Financial Modeling on Coursera",
-                "Financial Analysis on edX",
-                "Investment Analysis and Portfolio Management on edX"
+                "Checkout Financial Modeling on Coursera",
+                "Checkout Financial Analysis on edX",
+                "Checkout Investment Analysis and Portfolio Management on edX"
             ],
             "patterns": [
                 "Courses for Financial Analysts",

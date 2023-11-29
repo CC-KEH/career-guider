@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { CircularProgressbar } from 'react-circular-progressbar';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 function ProgressBar(props) {
@@ -16,7 +16,7 @@ function ProgressBar(props) {
   return (
     <div style={{textAlign:"center"}}>
       <div style={{ width: 250, marginLeft: 32, marginTop:30}}>
-        <CircularProgressbar value={percentage} text={`${percentage}%`} />
+        <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles({pathColor: '#217bf4',textColor: '#217bf4',trailColor:'#f3f8fe'})}/>
       </div>
     </div>
   );

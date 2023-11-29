@@ -9,12 +9,11 @@ import trackprogress from "../assets/homescreen/trackprogress.svg";
 import resume from "../assets/homescreen/resume.svg";
 import { Link } from "react-router-dom";
 import Chatbox from "../chatbot/Chatbox";
-
+import Footer from "../components/Footer/Footer";
 export const Welcome = () => {
   return (
     <>
-        <Chatbox />
-
+      <Chatbox />
       <div className={styles.header}>
         <div className={styles.div}>
           <div className={styles.overlap}>
@@ -156,6 +155,7 @@ export const Welcome = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

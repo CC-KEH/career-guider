@@ -9,6 +9,7 @@ function HomeScreen() {
   return (
     <>
       <Navbar/>
+      <Chatbox/>
       <div className="bg-gradient-to-br from-blue-100 to-white py-10">
         <div className="h-3/4 mb-36">
           <div className="container mx-auto space-x-3 pt-4">
@@ -99,7 +100,6 @@ function HomeScreen() {
           </div>
         </div>
       </div>
-      <Chatbox/>
       <Footer/>
     </>
   );

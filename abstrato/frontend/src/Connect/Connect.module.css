@@ -1,6 +1,6 @@
 .card {
-    width: 17em;
-    height: 22.5em;
+    width: 20em;
+    height: 25em;
     background: #171717;
     transition: 1s ease-in-out;
     clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
@@ -28,8 +28,8 @@
   }
   
   .card .img {
-    width: 4.8em;
-    height: 4.8em;
+    width: 5em;
+    height: 5em;
     background: white;
     border-radius: 15px;
     margin: auto;
@@ -61,10 +61,10 @@
     background: #ffffff;
     color: rgb(0, 0, 0);
     transition: .4s ease-in-out;
+    width: 7em;
   }
   
   .card button:hover {
-    background: red;
     color: white;
     cursor: pointer;
   }

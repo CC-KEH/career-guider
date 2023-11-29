@@ -79,9 +79,12 @@ function JobPortal() {
 				</div>
 			</div>
 			</div>
+			
 			);
-			})
+			}
+			)
 		}
+		
 		</div>
     );
 }

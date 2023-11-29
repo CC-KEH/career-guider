@@ -54,16 +54,16 @@ def get_response(msg):
         for intent in intents['intents']:
             if tag == intent["tag"]:
                 return random.choice(intent['responses'])
-            
-        for job_data in jobs_data['jobs']:
-            if tag == job_data["job_title"]:
-                return random.choice(job_data['responses'])
 
-        for course_data in courses_data['job_courses']:
-            if tag == course_data["course_title"]:
-                return random.choice(course_data['recommended_courses'])
-    
-    return "Sorry I do not understand."
+        for job in jobs_data['jobs']:
+            if tag == job["tag"]:
+                return random.choice(job['responses'])
+        
+        for course in courses_data['courses']:
+            if tag == course["tag"]:
+                return random.choice(course['responses'])
+
+    return "I do not understand..."
 
 
 if __name__ == "__main__":
